@@ -23,6 +23,11 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
+
+    /**
+     * 测试发送消息方法
+     * @throws Exception
+     */
     @GetMapping("/send")
     public void send() throws Exception {
         Order order = new Order("001", "第一个订单");
